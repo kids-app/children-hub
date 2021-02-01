@@ -73,7 +73,7 @@ class Posts extends Component {
             {this.props.posts.map((post)=>{
               return(
               
-                <div style={Posts.CARD_STYLE}><Link to={`/${post.id}`} data ={post} >
+                <div style={Posts.CARD_STYLE}><Link to={`/${post.id}`}  >
                   <img src={post.img}/><h2>{post.title}</h2></Link></div>
           
               )  

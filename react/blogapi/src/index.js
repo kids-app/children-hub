@@ -13,7 +13,7 @@ import Logout from './components/logout';
 import Songs from './components/songs';
 import  Stories  from './components/stories';
 import Joudi from './components/story';
-
+import Mais from './components/guessingGame';
 
 import Home from './components/home';
 
@@ -28,10 +28,12 @@ const routing = (
            
                 <Route exact path="/" component={Home} />
                 <Route path="/register" component={Register} />
+                <Route path="/guessing/:id" component={Mais} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
                 <Route  path="/stories" component={Stories}/>    
-                <Route path="/:id" component={Joudi}/>               
+                <Route path="/:id" component={Joudi}/>   
+                    
             </Switch>
             
             
