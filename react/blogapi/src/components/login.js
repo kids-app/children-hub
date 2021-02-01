@@ -74,8 +74,10 @@ export default function SignIn() {
 
 	return (
 		<Container component="main" maxWidth="xs">
+			
 			<CssBaseline />
-			<div >
+			<div class='formdiv' >
+				
 				<Avatar ></Avatar>
 				<Typography component="h1" variant="h5">
 					Sign in
@@ -113,7 +115,7 @@ export default function SignIn() {
 						type="submit"
 						fullWidth
 						variant="contained"
-						color="primary"
+						color="dark"
 					
 						onClick={handleSubmit}
 					>

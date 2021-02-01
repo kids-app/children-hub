@@ -1,0 +1,44 @@
+body {
+    background-image: url("../pics/back4.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+
+	margin: 0;
+	padding: 0;
+}
+.formdiv{
+    width: 400px;
+    
+    position: relative;
+    margin-top:-350px ;
+    margin-left:550px ;
+    background-color: #B298C8;
+    opacity: 70%;
+    border-radius: 15%;
+    
+}
+
+input{
+    margin-left: 20% ;
+    width: 60%;
+    height:40px;
+    border: solid 2px #9C27B0;
+}
+
+.submit{
+    margin-left: 30% ;
+    width: 40%;
+    height:40px;
+    background-color: #ffff1a;
+   border: solid 2px #9C27B0;
+  
+   font-weight: bold;
+}
+
+.title{
+    margin-left: 40% ;
+    margin-top: 30% ;
+    font-size: large;
+    font-weight: bold;
+}

@@ -5,8 +5,9 @@ export default function Home(props){
     return(
         <>
        
-<body>
+
 <main>
+
         
         <section class="stage">
             <figure class="ball bubble"></figure>
@@ -35,7 +36,11 @@ export default function Home(props){
         
     </main>
     <script src="app.js"></script>
-</body>
+
         </>
     )
 }
+
+
+
+
