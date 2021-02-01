@@ -15,7 +15,11 @@ import  Stories  from './components/stories';
 import Joudi from './components/story';
 
 
+import Mais from './components/guessingGame';
+
+
 import Home from './components/home';
+import HomeAfter from './components/homeAfter';
 
 
 
@@ -27,11 +31,15 @@ const routing = (
             <Switch>
            
                 <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={HomeAfter} />
+                <Route exact path="/songs" component={Songs} />
                 <Route path="/register" component={Register} />
+                <Route path="/guessing/:id" component={Mais} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
                 <Route  path="/stories" component={Stories}/>    
-                <Route path="/:id" component={Joudi}/>               
+                <Route path="/:id" component={Joudi}/>   
+                    
             </Switch>
             
             
