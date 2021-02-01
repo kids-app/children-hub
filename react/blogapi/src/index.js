@@ -9,29 +9,36 @@ import Footer from './components/footer';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+
+import Songs from './components/songs';
+import  Stories  from './components/stories';
+import Joudi from './components/story';
+
+
 import Home from './components/home';
 
 
 
 // 
+
 const routing = (
     <Router>
         <React.StrictMode>
-            {/* <Header /> */}
             <Switch>
+           
                 <Route exact path="/" component={Home} />
-				<Route exact path="/stories" component={App} />
-                   
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
+                <Route  path="/stories" component={Stories}/>    
+                <Route path="/:id" component={Joudi}/>               
             </Switch>
             
             
-            <Footer />
         </React.StrictMode>
     </Router>
 );
+
 ReactDOM.render(routing, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
