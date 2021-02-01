@@ -65,7 +65,9 @@ class Posts extends Component {
   render() {
       console.log(this.props.posts)
     return (
-            <body className='body'>
+
+
+            <>
             <div style={Posts.CONTAINER_STYLE}>
             <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
             {this.props.posts.map((post)=>{
@@ -79,9 +81,13 @@ class Posts extends Component {
             })}
             </ReactCardCarousel>
           </div>
+
           <Footer />
-          </body>
-        
+
+        </>
+
+          
+
      
     );
   }
