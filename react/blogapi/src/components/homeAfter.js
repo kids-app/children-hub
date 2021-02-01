@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 
-class Home extends React.Component {
+class HomeAfter extends React.Component {
     state = {
         redirect: false
     }
@@ -21,29 +21,30 @@ class Home extends React.Component {
     render() {
         return (
             <>
-                {this.renderlogin()}
                 <main>
                     <section class="stage">
-                        <Link onClick={this.setRedirect}>
+
+                        <Link to='/stories' >
                             <figure class="ball bubble"></figure>
                         </Link>
                     </section>
                     <section class="stage2">
-                        <Link onClick={this.setRedirect}>
+                        <Link >
                             <figure class="ball2 bubble"></figure>
                         </Link>
                     </section>
                     <section class="stage3">
-                        <Link onClick={this.setRedirect}>
+                        <Link >
                             <figure class="ball3 bubble"></figure>
                         </Link>
                     </section>
                     <section class="stage4">
-                        <Link onClick={this.setRedirect}>
+                        <Link>
                             <figure class="ball4 bubble"></figure>
                         </Link>
                     </section>
-                    <button class="signin" type="button" onClick={this.setRedirect}>Sign In</button>
+                    {this.renderlogin()}
+                    <button class="signin" type="button" onClick={this.setRedirect}>Sign Out</button>
                 </main>
                 <script src="app.js"></script>
             </>
@@ -51,7 +52,7 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
+export default HomeAfter;
 
 
 
