@@ -13,10 +13,8 @@ import Logout from './components/logout';
 import Songs from './components/songs';
 import  Stories  from './components/stories';
 import Joudi from './components/story';
-
-
 import Home from './components/home';
-
+import HomeAfter from './components/homeAfter';
 
 
 // 
@@ -27,6 +25,7 @@ const routing = (
             <Switch>
            
                 <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={HomeAfter} />
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
