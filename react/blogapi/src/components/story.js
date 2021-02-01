@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { useEffect, useState } from 'react';
 
 import axios from 'axios';
 import axiosInstance from '../axios';
 import PostLoadingComponent from './postLoading';
 import Footer from './footer';
-
+import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 
 function Joudi  ({match}){
         var baseURL=`https://stories-api-for-kids.herokuapp.com/api/${match.params.id}/`
@@ -48,7 +48,7 @@ function Joudi  ({match}){
                 <img src={props.post.img}/>
                 <audio src={props.post.audio} controls> <embed src={props.post.audio} width="300" height="90" loop="false" autostart="false"></embed> </audio>
                 <p>{props.post.content}</p>
-            
+                <div> <Link to={`/guessing/${props.post.id}`} >Guessing Game</Link></div>
             
             </div>
             <Footer />
