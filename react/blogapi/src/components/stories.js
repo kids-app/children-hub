@@ -1,9 +1,36 @@
 
-import '../stories.css'
 
-import React, { Component } from "react";
+import React, { Component }  from "react";
+import { useEffect, useState } from 'react';
+import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+
 import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
+import PostLoadingComponent from './postLoading';
+import axiosInstance from '../axios';
+import Footer from './footer';
+import '../stories.css'
+
+function Stories() {
+  const PostLoading = PostLoadingComponent(Posts);
+  const [appState, setAppState] = useState({
+      loading: true,
+      posts: null,
+  });
+  useEffect(() => {
+      axiosInstance.get().then((res) => {
+          const allPosts = res.data;
+          setAppState({ loading: false, posts: allPosts });
+          console.log(res.data);
+      });
+  }, [setAppState]);
+  return (
+      <div >
+         
+          <PostLoading isLoading={appState.loading} posts={appState.posts} />
+      </div>
+  );
+}
 class Posts extends Component {
     constructor(props){
 
@@ -38,26 +65,30 @@ class Posts extends Component {
   render() {
       console.log(this.props.posts)
     return (
-            <body>
+            <body className='body'>
             <div style={Posts.CONTAINER_STYLE}>
             <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
             {this.props.posts.map((post)=>{
               return(
               
-                <div style={Posts.CARD_STYLE}><img src={post.img}/><h2>{post.title}</h2></div>
+                <div style={Posts.CARD_STYLE}><Link to={`/${post.id}`} data ={post} >
+                  <img src={post.img}/><h2>{post.title}</h2></Link></div>
           
               )  
               
             })}
             </ReactCardCarousel>
           </div>
+          <Footer />
           </body>
         
      
     );
   }
 }
-export default Posts;
+// export default Posts;
+export default Stories;
+
 
 
 
