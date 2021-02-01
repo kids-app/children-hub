@@ -8,12 +8,13 @@ import Footer from './components/footer';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+import Home from './components/home';
 const routing = (
     <Router>
         <React.StrictMode>
             {/* <Header /> */}
             <Switch>
-                <Route exact path="/"  />
+                <Route exact path="/" component={Home} />
 				<Route exact path="/stories" component={App} />
 
                 <Route path="/register" component={Register} />
