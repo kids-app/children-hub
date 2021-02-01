@@ -1,4 +1,5 @@
 import React from 'react';
+// import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
@@ -9,6 +10,10 @@ import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
 import Home from './components/home';
+
+
+
+// 
 const routing = (
     <Router>
         <React.StrictMode>
@@ -16,11 +21,13 @@ const routing = (
             <Switch>
                 <Route exact path="/" component={Home} />
 				<Route exact path="/stories" component={App} />
-
+                   
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
             </Switch>
+            
+            
             <Footer />
         </React.StrictMode>
     </Router>
@@ -30,3 +37,5 @@ ReactDOM.render(routing, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+
