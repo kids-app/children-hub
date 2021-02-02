@@ -15,13 +15,14 @@ import Songs from './components/songs';
 import  Stories  from './components/stories';
 import Joudi from './components/story';
 
-
+import "./App.css";
 import Mais from './components/guessingGame';
 
 
 import Home from './components/home';
 import HomeAfter from './components/homeAfter';
 import AllGames from './components/allgames';
+import Piano from './Piano'
 
 // 
 
@@ -34,6 +35,7 @@ const routing = (
                 <Route exact path="/home" component={HomeAfter} />
                 <Route exact path="/songs" component={Songs} />
                 <Route path="/gamexo" component={Game} />
+                <Route className="app-container" path="/piano" component={Piano} />
                 <Route path="/games" component={AllGames} />
                 <Route path="/register" component={Register} />
                 <Route path="/guessing/:id" component={Mais} />
