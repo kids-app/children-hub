@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { useEffect, useState } from 'react';
-
+import '../stories.css'
 import axios from 'axios';
 import axiosInstance from '../axios';
 import PostLoadingComponent from './postLoading';
@@ -43,12 +43,18 @@ function Joudi  ({match}){
     function Sondos(props){
         return(
            <>
+           
             <div>
-                <h1>{props.post.title}</h1>
-                <img src={props.post.img}/>
-                <audio src={props.post.audio} controls> <embed src={props.post.audio} width="300" height="90" loop="false" autostart="false"></embed> </audio>
-                <p>{props.post.content}</p>
-                <div> <Link to={`/guessing/${props.post.id}`} >Guessing Game</Link></div>
+                <div className='part1'>
+                <h1 className='first'>{props.post.title}</h1>
+                <div className='imgand'>
+                <img className='second' src={props.post.img}/>
+                <audio className='third' src={props.post.audio} controls> <embed src={props.post.audio} width="300" height="90" loop="false" autostart="false"></embed> </audio>
+                </div>
+                <div className='five' > <button className='but'><Link to={`/guessing/${props.post.id}`} >Guessing Game</Link></button></div>
+                </div>
+                <div className='par'><p className='fourth'>{props.post.content}</p></div> 
+                
             
             </div>
             <Footer />
