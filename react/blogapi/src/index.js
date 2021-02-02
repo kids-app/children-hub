@@ -9,6 +9,7 @@ import Footer from './components/footer';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+import Game from './components/Game/index';
 
 import Songs from './components/songs';
 import  Stories  from './components/stories';
@@ -20,8 +21,7 @@ import Mais from './components/guessingGame';
 
 import Home from './components/home';
 import HomeAfter from './components/homeAfter';
-
-
+import AllGames from './components/allgames';
 
 // 
 
@@ -33,6 +33,8 @@ const routing = (
                 <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={HomeAfter} />
                 <Route exact path="/songs" component={Songs} />
+                <Route path="/gamexo" component={Game} />
+                <Route path="/games" component={AllGames} />
                 <Route path="/register" component={Register} />
                 <Route path="/guessing/:id" component={Mais} />
                 <Route path="/login" component={Login} />
