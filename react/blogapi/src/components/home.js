@@ -2,6 +2,7 @@ import React from 'react';
 import "../css/home.css";
 import { Redirect } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import Footer from './footer';
 // import Nav from 'components/nav.js';
 
 
@@ -52,6 +53,7 @@ class Home extends React.Component {
                     <button class="signin" type="button" onClick={this.setRedirect}>Sign In</button>
                 </main>
                 <script src="app.js"></script>
+                
             </>
         )
     }
