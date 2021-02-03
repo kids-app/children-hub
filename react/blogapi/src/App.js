@@ -19,6 +19,8 @@ import FullScreen from "@material-ui/icons/Fullscreen";
 import Popover from "@material-ui/core/Popover";
 import screenful from "screenfull";
 import Controls from "./components/Controls";
+import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import { func } from "prop-types";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -431,18 +433,21 @@ function App(){
   
 }
 
+
 function video(props){
+  
+
 
   return(
     <>
-    {/* <iframe width="500" height="200" src={"https://www.youtube.com/embed/"+props.songs.items[0].snippet.resourceId.videoId} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-
+ 
     {props.songs.items.map(item=>{
       return(
+        
         <>
-            <iframe width="500" height="200" src={"https://www.youtube.com/embed/"+item.snippet.resourceId.videoId} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      {/* <img  src={item.snippet.thumbnails.default.url}/> */}
+  <Link to={`/songs/${item.snippet.resourceId.videoId}`} ><img  src={item.snippet.thumbnails.default.url} /> </Link>
+
       </>
         )
     })}
