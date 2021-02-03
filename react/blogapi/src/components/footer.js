@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/footer.css";
+import "../css/nav.css";
 import { Link } from 'react-router-dom';
 
 
@@ -30,12 +31,13 @@ function Footer() {
 </Link>
 </section> */}
 		<div class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a class="myanq" href="#">Stories</a>
+        <a class="myanq" href="#">Songs</a>
+        <a class="myanq" href="#">Games</a>
+        <a class="myanq" href="#">Music</a>
       </div>
      
+    
 		</>
 		
 	);
