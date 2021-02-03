@@ -40,7 +40,7 @@ class Posts extends Component {
   static get CONTAINER_STYLE() {
     return {
       position: "relative",
-      height: "100vh",
+      height: "110vh",
       width: "100%",
       display: "flex",
       flex: 1,
@@ -50,17 +50,18 @@ class Posts extends Component {
   }
   static get CARD_STYLE() {
     return {
-      height: "350px",
+      height: "550px",
       width: "350px",
       paddingTop: "80px",
       textAlign: "center",
-      background: "#52C0F5",
+      background: "#9DD8F7",
       color: "#FFF",
       fontFamily: "sans-serif",
       fontSize: "12px",
-      textTransform: "uppercase",
+      // textTransform: "uppercase",
       borderRadius: "10px",
       boxSizing: "border-box"
+      
     };
   }
   render() {
@@ -75,7 +76,9 @@ class Posts extends Component {
               return(
               
                 <div style={Posts.CARD_STYLE}><Link to={`/${post.id}`}  >
-                  <img src={post.img}/><h2>{post.title}</h2></Link></div>
+                  <div className='storyImage'>
+                  <img className='imagest'  src={post.img}/></div>
+                  <h2 className='titlo' >{post.title}</h2></Link></div>
           
               )  
               

@@ -9,19 +9,19 @@ import Footer from './components/footer';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+import Game from './components/Game/index';
 
-import Songs from './components/songs';
 import  Stories  from './components/stories';
 import Joudi from './components/story';
 
-
+import "./App.css";
 import Mais from './components/guessingGame';
 
 
 import Home from './components/home';
 import HomeAfter from './components/homeAfter';
-
-
+import AllGames from './components/allgames';
+import Piano from './Piano'
 
 // 
 
@@ -32,13 +32,19 @@ const routing = (
            
                 <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={HomeAfter} />
-                <Route exact path="/songs" component={Songs} />
+                <Route exact path="/songs" component={App} />
+
+
+                <Route path="/gamexo" component={Game} />
+                <Route className="app-container" path="/piano" component={Piano} />
+                <Route path="/games" component={AllGames} />
                 <Route path="/register" component={Register} />
                 <Route path="/guessing/:id" component={Mais} />
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
                 <Route  path="/stories" component={Stories}/>    
-                <Route path="/:id" component={Joudi}/>   
+                <Route path="/:id" component={Joudi}/> 
+
                     
             </Switch>
             
