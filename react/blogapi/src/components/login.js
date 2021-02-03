@@ -13,7 +13,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 // import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import "../css/login.css";
+import "../css/home.css";
 // const useStyles = makeStyles((theme) => ({
 // 	paper: {
 // 		marginTop: theme.spacing(8),
@@ -78,30 +79,34 @@ export default function SignIn() {
 			<CssBaseline />
 			<div class='formdiv' >
 				
-				<Avatar ></Avatar>
-				<Typography component="h1" variant="h5">
+				{/* <Avatar> </Avatar> */}
+				<Typography class='s1'component="h1" variant="h5">
 					Sign in
 				</Typography>
-				<form  noValidate>
+				<form class='myform' noValidate>
 					<TextField
+					class='text'
 						variant="outlined"
 						margin="normal"
 						required
 						fullWidth
 						id="email"
-						label="Email Address"
+						// label="Email Address"
 						name="email"
 						autoComplete="email"
+						placeholder='email'
 						autoFocus
 						onChange={handleChange}
 					/>
 					<TextField
+					class='text2'
 						variant="outlined"
 						margin="normal"
 						required
 						fullWidth
 						name="password"
-						label="Password"
+						// label="Password"
+						placeholder='Password'
 						type="password"
 						id="password"
 						autoComplete="current-password"
@@ -112,6 +117,7 @@ export default function SignIn() {
 						label="Remember me"
 					/>
 					<Button
+					class='mybutton'
 						type="submit"
 						fullWidth
 						variant="contained"
@@ -122,12 +128,12 @@ export default function SignIn() {
 						Sign In
 					</Button>
 					<Grid container>
-						<Grid item xs>
+						{/* <Grid item xs>
 							<Link href="#" variant="body2">
 								Forgot password?
 							</Link>
-						</Grid>
-						<Grid item>
+						</Grid> */}
+						<Grid class='dont' item>
 							<Link href="/register" variant="body2">
 								{"Don't have an account? Sign Up"}
 							</Link>

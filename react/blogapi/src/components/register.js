@@ -13,6 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 // import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import "../css/login.css";
 
 // const useStyles = makeStyles((theme) => ({
 // 	paper: {
@@ -73,58 +74,65 @@ export default function SignUp() {
 	return (
 		<Container component="main" maxWidth="xs">
 			<CssBaseline />
-			<div >
-				<Avatar ></Avatar>
-				<Typography component="h1" variant="h5">
+			<div class='formdiv'>
+				
+				<Typography class='s1' component="h1" variant="h5">
 					Sign up
 				</Typography>
-				<form  noValidate>
+				<form class='myform' noValidate>
 					<Grid container spacing={2}>
 						<Grid item xs={12}>
 							<TextField
+							class='text'
 								variant="outlined"
 								required
 								fullWidth
 								id="email"
-								label="Email Address"
+								// label="Email Address"
 								name="email"
 								autoComplete="email"
+								placeholder='email'
 								onChange={handleChange}
 							/>
 						</Grid>
 						<Grid item xs={12}>
 							<TextField
+							class='text3'
 								variant="outlined"
 								required
 								fullWidth
 								id="username"
-								label="Username"
+								// label="Username"
 								name="username"
 								autoComplete="username"
+								placeholder='username'
 								onChange={handleChange}
 							/>
 						</Grid>
 						<Grid item xs={12}>
 							<TextField
+							class='text4'
 								variant="outlined"
 								required
 								fullWidth
 								name="password"
-								label="Password"
+								// label="Password"
 								type="password"
 								id="password"
 								autoComplete="current-password"
+								placeholder='password'
 								onChange={handleChange}
 							/>
 						</Grid>
-						<Grid item xs={12}>
+						{/* <Grid item xs={12}>
 							<FormControlLabel
 								control={<Checkbox value="allowExtraEmails" color="primary" />}
 								label="I want to receive inspiration, marketing promotions and updates via email."
 							/>
-						</Grid>
+						</Grid> */}
 					</Grid>
 					<Button
+					class='mybutton'
 						type="submit"
 						fullWidth
 						variant="contained"
@@ -134,8 +142,8 @@ export default function SignUp() {
 					>
 						Sign Up
 					</Button>
-					<Grid container justify="flex-end">
-						<Grid item>
+					<Grid class='do' container justify="flex-end">
+						<Grid  item>
 							<Link href="/login" variant="body2">
 								Already have an account? Sign in
 							</Link>

@@ -1,21 +1,42 @@
 import React from 'react';
-import '../footer.css'
-
+import "../css/footer.css";
+import { Link } from 'react-router-dom';
 
 
 
 
 function Footer() {
 	return (
-		
-		<ul>
-			<li><a href='/'><img height='70px' width='70px' src='https://www.pczone.co.uk/wp-content/uploads/2020/04/pcz-games-cartoons.jpg' /></a></li>
-			<li><a href='/stories'><img height='70px' width='70px'  src='https://www.clipartmax.com/png/full/11-119903_big-free-printable-social-stories.png' /></a></li>
-			<li><img height='70px' width='70px'  src='https://image.freepik.com/free-vector/cartoon-character-playing-chess-game_29937-4044.jpg' /></li>
-			<li><img height='70px' width='70px'  src='https://img.favpng.com/12/25/0/video-game-cartoon-play-royalty-free-png-favpng-zvvWGH78D87ibPqJE6ZwUNHyK.jpg' /></li>
+		<>
+     {/* <section class="stagee">
 
-		</ul>
-		
+<Link to='/stories' >
+    <figure class="balll"><img class='imgg' src={require('../pics/story3.png')}/></figure>
+</Link>
+</section>
+<section class="stage2">
+<Link >
+    <figure class="ball2 bubble"><img class='img2' src={require('../pics/games.png')}/></figure>
+</Link>
+</section>
+<section class="stage3">
+<Link >
+    <figure class="ball3 bubble"><img class='img3' src={require('../pics/songs.png')}/></figure>
+</Link>
+</section>
+<section class="stage4">
+<Link>
+    <figure class="ball4 bubble"><img class='img4' src={require('../pics/whoknows.png')}/></figure>
+</Link>
+</section> */}
+		<div class="sidenav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+     
+		</>
 		
 	);
 }
