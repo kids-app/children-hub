@@ -11,7 +11,6 @@ import Login from './components/login';
 import Logout from './components/logout';
 import Game from './components/Game/index';
 
-import Songs from './components/songs';
 import  Stories  from './components/stories';
 import Joudi from './components/story';
 
@@ -33,7 +32,9 @@ const routing = (
            
                 <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={HomeAfter} />
-                <Route exact path="/songs" component={Songs} />
+                <Route exact path="/songs" component={App} />
+
+
                 <Route path="/gamexo" component={Game} />
                 <Route className="app-container" path="/piano" component={Piano} />
                 <Route path="/games" component={AllGames} />
@@ -42,7 +43,8 @@ const routing = (
                 <Route path="/login" component={Login} />
                 <Route path="/logout" component={Logout} />
                 <Route  path="/stories" component={Stories}/>    
-                <Route path="/:id" component={Joudi}/>   
+                <Route path="/:id" component={Joudi}/> 
+
                     
             </Switch>
             
