@@ -10,6 +10,7 @@ import PostLoadingComponent from './postLoading';
 import axiosInstance from '../axios';
 import Footer from './footer';
 import '../stories.css';
+import Nav from './nav';
 
 
 function Stories() {
@@ -87,7 +88,7 @@ class Posts extends Component {
           </div>
 
           <Footer />
-
+          {/* <Nav /> */}
         </>
 
           
