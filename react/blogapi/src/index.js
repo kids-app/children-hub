@@ -13,7 +13,7 @@ import Game from './components/Game/index';
 
 import  Stories  from './components/stories';
 import Joudi from './components/story';
-
+import Aboutus from './components/aboutus';
 import "./App.css";
 import Mais from './components/guessingGame';
 
@@ -33,7 +33,7 @@ const routing = (
                 <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={HomeAfter} />
                 <Route exact path="/songs" component={App} />
-
+                <Route path="/aboutus" component={Aboutus} />
 
                 <Route path="/gamexo" component={Game} />
                 <Route className="app-container" path="/piano" component={Piano} />
