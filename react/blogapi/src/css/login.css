@@ -1,4 +1,4 @@
-body {
+/* body {
     background-image: url("../pics/back4.png");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -6,11 +6,11 @@ body {
 
 	margin: 0;
 	padding: 0;
-}
+} */
 .formdiv{
      width: 400px;
      height: 500px;
-    
+     font-family: 'Potta One', cursive;
    /* position: relative;*/
     margin-top:150px ;
     /* margin-left:50px ;  */
@@ -57,7 +57,7 @@ body {
     background-color: #FAEF82;
     border: solid 1px #FAEF82;
     border-radius: 5%;
-    
+    font-family: 'Potta One', cursive;
     box-shadow: 5px 5px #9DD8F7, 10px 10px #f98ebb;
     
 }

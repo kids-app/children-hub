@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import { useEffect, useState } from 'react';
-import '../stories.css'
+// import '../stories.css'
 import axios from 'axios';
 import axiosInstance from '../axios';
 import PostLoadingComponent from './postLoading';
-import Footer from './footer';
+
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import Footer2 from './footer2';
+
+// import Nav from './nav';
 
 function Joudi  ({match}){
         var baseURL=`https://stories-api-for-kids.herokuapp.com/api/${match.params.id}/`
@@ -57,7 +60,8 @@ function Joudi  ({match}){
                 
             
             </div>
-            <Footer />
+            <Footer2 />
+            {/* <Nav /> */}
             </>
         )
 
