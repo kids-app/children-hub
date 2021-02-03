@@ -15,6 +15,8 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import "../css/login.css";
 import "../css/home.css";
+import Nav from './nav.js';
+import Footer from './footer';
 // const useStyles = makeStyles((theme) => ({
 // 	paper: {
 // 		marginTop: theme.spacing(8),
@@ -141,6 +143,8 @@ export default function SignIn() {
 					</Grid>
 				</form>
 			</div>
+			<Nav />
+			<Footer />
 		</Container>
 	);
 }
