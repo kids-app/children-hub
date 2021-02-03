@@ -9,7 +9,8 @@ import ReactCardCarousel from "react-card-carousel";
 import PostLoadingComponent from './postLoading';
 import axiosInstance from '../axios';
 import Footer from './footer';
-import '../stories.css'
+import '../stories.css';
+
 
 function Stories() {
   const PostLoading = PostLoadingComponent(Posts);
