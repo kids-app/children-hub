@@ -20,6 +20,7 @@ import Popover from "@material-ui/core/Popover";
 import screenful from "screenfull";
 import Controls from "./components/Controls";
 
+
 const useStyles = makeStyles((theme) => ({
   playerWrapper: {
     width: "100%",
