@@ -1,7 +1,9 @@
 body {
     background-image: url("../pics/back4.png");
 	background-size: cover;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  
+  font-family: 'Potta One', cursive;
 	
 
 	margin: 0;
@@ -714,7 +716,7 @@ body {
      /* *********************************** */
 
 
-     .signup{
+     /* .signup{
       height: 80px;
       width: 200px;
     
@@ -725,7 +727,7 @@ body {
       border-radius: 2%;
       color: white;
       font-size: large;
-    }
+    } */
 
 
     .signin{
@@ -740,6 +742,7 @@ body {
       color: white;
       font-size: xx-large;
       box-shadow: 5px 5px #9DD8F7, 10px 10px #f98ebb, 15px 15px #FAF088;
+      font-family: 'Potta One', cursive;
     }
 
     .signin:hover{
@@ -787,4 +790,8 @@ body {
   width: 80%;
   height: 80%;
   opacity: 80%;
+}
+
+.xogame{
+  margin-left: 300px;
 }

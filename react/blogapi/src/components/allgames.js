@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom';
 import "../css/footer.css";
 import "../css/nav.css";
 import Nav from './nav.js';
-import Footer from './footer';
+import Footer2 from './footer2';
 
 export default function AllGames(){
     return(
         <>
         <Link to='/gamexo' >
-         <h1>XO game</h1>
+         <h1 class='xogame'>XO game</h1>
          </Link>
 
     <Link to='/piano' >
-    <h1>Play the Piano</h1>
+    <h1 class='xogame'>Play the Piano</h1>
     </Link>
-<Footer/>
-<Nav/>
+<Footer2/>
+{/* <Nav/> */}
          </>
 
     )
