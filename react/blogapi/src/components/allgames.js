@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../css/footer.css";
+import "../css/nav.css";
+import Nav from './nav.js';
+import Footer from './footer';
 
 export default function AllGames(){
     return(
@@ -11,7 +15,8 @@ export default function AllGames(){
     <Link to='/piano' >
     <h1>Play the Piano</h1>
     </Link>
-
+<Footer/>
+<Nav/>
          </>
 
     )
