@@ -29,12 +29,12 @@ class HomeAfter extends React.Component {
                         </Link>
                     </section>
                     <section class="stage2">
-                        <Link >
+                        <Link to='/games' >
                             <figure class="ball2 bubble"><img class='img2' src={require('../pics/games.png')}/></figure>
                         </Link>
                     </section>
                     <section class="stage3">
-                        <Link >
+                        <Link to='/songs'>
                             <figure class="ball3 bubble"><img class='img3' src={require('../pics/songs.png')}/></figure>
                         </Link>
                     </section>
