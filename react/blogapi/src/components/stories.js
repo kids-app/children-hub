@@ -8,7 +8,9 @@ import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
 import PostLoadingComponent from './postLoading';
 import axiosInstance from '../axios';
-import Footer from './footer';
+import Footer2 from './footer2';
+
+// import Nav from './nav';
 import '../stories.css';
 
 
@@ -86,8 +88,8 @@ class Posts extends Component {
             </ReactCardCarousel>
           </div>
 
-          <Footer />
-
+          <Footer2 />
+          {/* <Nav /> */}
         </>
 
           

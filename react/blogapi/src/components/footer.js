@@ -30,10 +30,13 @@ function Footer() {
     <figure class="ball4 bubble"><img class='img4' src={require('../pics/whoknows.png')}/></figure>
 </Link>
 </section> */}
+
 		<div class="sidenav">
-        <a class="myanq" href="#">Stories</a>
-        <a class="myanq" href="#">Songs</a>
-        <a class="myanq" href="#">Games</a>
+        
+        <a class="myanq" href="/stories">Stories</a>
+        
+        <a class="myanq" href="/songs">Songs</a>
+        <a class="myanq" href="/games">Games</a>
         <a class="myanq" href="#">Music</a>
       </div>
      
