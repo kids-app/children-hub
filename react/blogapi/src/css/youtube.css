@@ -1,9 +1,29 @@
 .allVid{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
+    /* margin:-10px; */
+    /* width: 500px; */
+    /* flex-direction: row-reverse; */
+    
 }
 .youtubeLink{
-    list-style: none;
-    flex: 0 0 33.333333%;
+    /* list-style: none; */
+    /* flex-grow: 1;
+    width: 33%;
+    height: 100px; */
+
+    flex: 1 1 160px;
+        margin-top: 10px;
+        margin-left:50px ;
+        margin-right: 30px;
+}
+
+.divofallvid{
+    /* width: 200px;
+    margin-top: 200px; */
+    position: absolute;
+}
+
+.ALL{
+    position: relative;
 }

@@ -8,7 +8,7 @@ import PostLoadingComponent from './postLoading';
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import Footer2 from './footer2';
 
-// import Nav from './nav';
+import Nav from './nav';
 
 function Joudi  ({match}){
         var baseURL=`https://stories-api-for-kids.herokuapp.com/api/${match.params.id}/`
@@ -61,7 +61,7 @@ function Joudi  ({match}){
             
             </div>
             <Footer2 />
-            {/* <Nav /> */}
+            <Nav />
             </>
         )
 

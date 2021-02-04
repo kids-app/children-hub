@@ -76,7 +76,8 @@ export default function SignIn() {
 	// const classes = useStyles();
 
 	return (
-		<Container component="main" maxWidth="xs">
+<>
+		<Container  component="main" maxWidth="xs">
 			
 			<CssBaseline />
 			<div class='formdiv' >
@@ -143,8 +144,10 @@ export default function SignIn() {
 					</Grid>
 				</form>
 			</div>
-			<Nav />
-			<Footer />
+			
+			{/* <Footer /> */}
 		</Container>
+		<Nav />
+</>
 	);
 }
