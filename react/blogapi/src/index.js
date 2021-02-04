@@ -34,7 +34,7 @@ const routing = (
                 <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={HomeAfter} />
 
-                <Route exact path="/songs" component={App} />
+                {/* <Route exact path="/songs" component={App} /> */}
                 <Route path="/aboutus" component={Aboutus} />
 
                 <Route exact path="/songs" component={Youtube} />
