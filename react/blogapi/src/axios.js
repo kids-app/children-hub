@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://stories-api-for-children.herokuapp.com/api/';
+const baseURL = 'https://stories-api-for-kids.herokuapp.com/api/';
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,
