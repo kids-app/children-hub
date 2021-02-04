@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useEffect, useState } from 'react';
 import PostLoadingComponent from './postLoading';
 import Footer from './footer';
 import axios from 'axios';
-// import WordPOS from 'wordpos';
+
 // var WordPOS = require('wordpos'),
 
 
@@ -32,7 +32,7 @@ function Mais  ({match}){
                 setAppState({ loading: false, post: detailPost });
                 console.log(res);
             });
-        }, [setAppState]);
+        }, );
         return(
             <div>
                    <PostLoading isLoading={appState.loading} post={appState.post} />

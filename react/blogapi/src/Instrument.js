@@ -23,7 +23,7 @@ const Instrument = ({
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("keyup", handleKeyUp);
-  }, []);
+  }, );
 
   const getNoteFromKeyboardKey = keyboardKey => {
     return keyboardMap[keyboardKey.toUpperCase()];

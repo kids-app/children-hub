@@ -2,13 +2,11 @@
 
 import React, { Component }  from "react";
 import { useEffect, useState } from 'react';
-import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import {  BrowserRouter as  Link } from 'react-router-dom';
 
-import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
 import PostLoadingComponent from './postLoading';
 import axiosInstance from '../axios';
-import Footer2 from './footer2';
 
 import Nav from './nav';
 import '../stories.css';
@@ -35,10 +33,7 @@ function Stories() {
   );
 }
 class Posts extends Component {
-    constructor(props){
 
-        super(props);
-    }
   static get CONTAINER_STYLE() {
     return {
       position: "relative",
@@ -79,7 +74,7 @@ class Posts extends Component {
               
                 <div style={Posts.CARD_STYLE}><Link to={`/${post.id}`}  >
                   <div className='storyImage'>
-                  <img className='imagest'  src={post.img}/></div>
+                  <img alt='img' className='imagest'  src={post.img}/></div>
                   <h2 className='titlo' >{post.title}</h2></Link></div>
           
               )  

@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import { useEffect, useState } from 'react';
 // import '../stories.css'
 import axios from 'axios';
-import axiosInstance from '../axios';
 import PostLoadingComponent from './postLoading';
 
-import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import {  BrowserRouter as  Link } from 'react-router-dom';
 import Footer2 from './footer2';
 
 import Nav from './nav';
@@ -35,7 +34,7 @@ function Joudi  ({match}){
                     setAppState({ loading: false, post: detailPost });
                     console.log(res);
                 });
-            }, [setAppState]);
+            });
             return(
                 <div>
                        <PostLoading isLoading={appState.loading} post={appState.post} />
@@ -51,7 +50,7 @@ function Joudi  ({match}){
                 <div className='part1'>
                 <h1 className='first'>{props.post.title}</h1>
                 <div className='imgand'>
-                <img className='second' src={props.post.img}/>
+                <img className='second' src={props.post.img} alt='stories-img'/>
                 <audio className='third' src={props.post.audio} controls> <embed src={props.post.audio} width="300" height="90" loop="false" autostart="false"></embed> </audio>
                 </div>
                 <div className='five' > <button className='but'><Link to={`/guessing/${props.post.id}`} >Guessing Game</Link></button></div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import AudioPlayer from "./AudioPlayer";
 
 const InstrumentAudio = ({ instrumentName, notes }) => {
@@ -12,13 +12,13 @@ const InstrumentAudio = ({ instrumentName, notes }) => {
       setInstrument();
       playNotes();
     }
-  }, [instrumentPlayer]);
+  }, );
 
   useEffect(() => {
     if (notes && notes.length > 0) {
       playNotes();
     }
-  }, [notes]);
+  }, );
 
   const setInstrument = () => {
     instrumentPlayer.setInstrument(instrumentName);

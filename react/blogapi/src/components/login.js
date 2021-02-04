@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axiosInstance from '../axios';
 import { useHistory } from 'react-router-dom';
 //MaterialUI
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -16,7 +15,6 @@ import Container from '@material-ui/core/Container';
 import "../css/login.css";
 import "../css/home.css";
 import Nav from './nav.js';
-import Footer from './footer';
 // const useStyles = makeStyles((theme) => ({
 // 	paper: {
 // 		marginTop: theme.spacing(8),

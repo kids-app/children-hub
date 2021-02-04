@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import '../stories.css'
 function Aboutus(){
 
@@ -7,7 +7,7 @@ function Aboutus(){
 
         <div class="infocardContainer">
   <div id="main">
-  <img  src={require('../pics/mais.jpg')}/>
+  <img  src={require('../pics/mais.jpg')} alt='img'/>
   </div>
   <div id="textbois">
     <h2>Mais Abbdalrazeq</h2>
@@ -20,7 +20,7 @@ function Aboutus(){
 
 <div class="infocardContainer2">
   <div id="main">
-  <img  src={require('../pics/sondos.jpg')}/>
+  <img  src={require('../pics/sondos.jpg')} alt='img'/>
   </div>
   <div id="textbois">
     <h2>Sondos Al-Braim</h2>
@@ -33,7 +33,7 @@ function Aboutus(){
 
 <div class="infocardContainer3">
   <div id="main">
-  <img  src={require('../pics/joudi.jpg')}/>
+  <img  src={require('../pics/joudi.jpg')} alt='img'/>
   </div>
   <div id="textbois">
     <h2>Joudi Awwameh</h2>
@@ -45,7 +45,7 @@ function Aboutus(){
 
 <div class="infocardContainer4">
   <div id="main">
-  <img  src={require('../pics/rand.jpg')}/>
+  <img  src={require('../pics/rand.jpg')} alt='img'/>
   </div>
   <div id="textbois">
     <h2>Rand Al-Sallaq</h2>
@@ -57,7 +57,7 @@ function Aboutus(){
 
 <div class="infocardContainer5">
   <div id="main">
-  <img  src={require('../pics/diala.jpg')}/>
+  <img  src={require('../pics/diala.jpg')} alt='img'/>
   </div>
   <div id="textbois">
     <h2>Diala Abdalqader</h2>
