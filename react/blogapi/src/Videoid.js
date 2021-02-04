@@ -6,11 +6,15 @@ function Videoid({match}){
     console.log(match.params.id)
         return(
             <>
+            <div class='ALL'>
           <div className='mainVid'>
           <Sss id={match.params.id} />
           </div>
+          <div class='divofallvid'>
           <div className='allVid'>
           <Youtube/>
+          </div>
+          </div>
           </div>
          
    

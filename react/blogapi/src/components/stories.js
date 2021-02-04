@@ -10,7 +10,7 @@ import PostLoadingComponent from './postLoading';
 import axiosInstance from '../axios';
 import Footer2 from './footer2';
 
-// import Nav from './nav';
+import Nav from './nav';
 import '../stories.css';
 
 
@@ -88,8 +88,8 @@ class Posts extends Component {
             </ReactCardCarousel>
           </div>
 
-          <Footer2 />
-          {/* <Nav /> */}
+          
+          <Nav />
         </>
 
           
