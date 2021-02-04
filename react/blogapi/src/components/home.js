@@ -2,7 +2,6 @@ import React from 'react';
 import "../css/home.css";
 import { Redirect } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import Footer from './footer';
 // import Nav from 'components/nav.js';
 
 
@@ -38,17 +37,17 @@ class Home extends React.Component {
                     </section>
                     <section class="stage2">
                         <Link onClick={this.setRedirect}>
-                            <figure class="ball2 bubble"><img class='img2' src={require('../pics/games.png')}/></figure>
+                            <figure class="ball2 bubble"><img alt='img' class='img2' src={require('../pics/games.png')}/></figure>
                         </Link>
                     </section>
                     <section class="stage3">
                         <Link onClick={this.setRedirect}>
-                            <figure class="ball3 bubble"><img class='img3' src={require('../pics/songs.png')}/></figure>
+                            <figure class="ball3 bubble"><img alt='img' class='img3' src={require('../pics/songs.png')}/></figure>
                         </Link>
                     </section>
                     <section class="stage4">
                         <Link onClick={this.setRedirect}>
-                            <figure class="ball4 bubble"><img class='img4' src={require('../pics/whoknows.png')}/></figure>
+                            <figure class="ball4 bubble"><img alt='img' class='img4' src={require('../pics/whoknows.png')}/></figure>
                         </Link>
                     </section>
                     <button class="signin" type="button" onClick={this.setRedirect}>Sign In</button>

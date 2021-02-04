@@ -31,7 +31,7 @@ function Game() {
        
         history.map((_step, move) => {
             if (move){
-                const destination = "Restart"
+               return ""
 
                }
             else{

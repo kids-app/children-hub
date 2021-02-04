@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import Youtube from './Youtubek';
 import "./css/youtube.css";
 function Videoid({match}){
@@ -25,7 +25,7 @@ function Sss(props){
     return(
     <>
     
-    <iframe className='iframe'  src={"https://www.youtube.com/embed/"+props.id} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title='iframe' className='iframe'  src={"https://www.youtube.com/embed/"+props.id} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
         </>
     )

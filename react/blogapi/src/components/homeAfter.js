@@ -32,17 +32,17 @@ class HomeAfter extends React.Component {
                     </section>
                     <section class="stage2">
                         <Link to='/games' >
-                            <figure class="ball2 bubble"><img class='img2' src={require('../pics/games.png')}/></figure>
+                            <figure class="ball2 bubble"><img alt='img' class='img2' src={require('../pics/games.png')}/></figure>
                         </Link>
                     </section>
                     <section class="stage3">
                         <Link to='/songs'>
-                            <figure class="ball3 bubble"><img class='img3' src={require('../pics/songs.png')}/></figure>
+                            <figure class="ball3 bubble"><img alt='img' class='img3' src={require('../pics/songs.png')}/></figure>
                         </Link>
                     </section>
                     <section class="stage4">
                         <Link>
-                            <figure class="ball4 bubble"><img class='img4' src={require('../pics/whoknows.png')}/></figure>
+                            <figure class="ball4 bubble"><img alt='img' class='img4' src={require('../pics/whoknows.png')}/></figure>
                         </Link>
                     </section>
                     {this.renderlogin()}

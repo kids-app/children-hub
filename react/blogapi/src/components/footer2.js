@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/footer2.css";
 // import "../css/nav2.css";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 
