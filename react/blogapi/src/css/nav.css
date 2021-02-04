@@ -36,6 +36,7 @@
   .p:hover{
     background: white;
     color: black;
+   
   }
   .navdiv:nth-child(odd){
     transform: perspective(300px) rotateY(45deg);
@@ -54,5 +55,6 @@
   
 .navsect p a{
   color: black;
+  text-decoration: none;
 }
 
