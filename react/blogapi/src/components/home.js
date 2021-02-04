@@ -3,6 +3,7 @@ import "../css/home.css";
 import { Redirect } from "react-router-dom";
 import { Link } from 'react-router-dom';
 // import Nav from 'components/nav.js';
+import Footer from './footer';
 
 
 class Home extends React.Component {
@@ -22,8 +23,8 @@ class Home extends React.Component {
     render() {
         return (
             <>
-             <Footer />
-          
+             
+          <Footer />
                 {this.renderlogin()}
                 <main class='main'>
               
