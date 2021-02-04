@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../css/footer.css";
 import "../css/nav.css";
-import Nav from './nav.js';
 import Footer2 from './footer2';
 
 export default function AllGames(){

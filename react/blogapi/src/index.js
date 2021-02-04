@@ -5,8 +5,6 @@ import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Youtube from './Youtubek';
 import Videoid from './Videoid';
-import Header from './components/header';
-import Footer from './components/footer';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
