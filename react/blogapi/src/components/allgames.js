@@ -4,6 +4,7 @@ import "../css/footer.css";
 import "../css/nav.css";
 import Nav from './nav.js';
 import Footer2 from './footer2';
+import "../css/games.css";
 
 export default function AllGames(){
     return(
@@ -15,9 +16,22 @@ export default function AllGames(){
     <Link to='/piano' >
     <h1 class='xogame'>Play the Piano</h1>
     </Link>
-<Footer2/>
-{/* <Nav/> */}
+
+<div class='game1div'>
+<section class="stagegames">
+  <figure class="ball"><span class="shadow"></span></figure>
+</section>
+</div>
+
+<section class="stagegames2">
+  <figure class="ballgames"><span class="shadow"></span></figure>
+</section>
+
+<Nav/>
          </>
 
     )
 }
+
+
+

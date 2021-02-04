@@ -3,7 +3,7 @@ console.log('hiiiiiiiiiii');
 
 const colors = ["#ff8888","#ffdda8",  "#d9d1ff",   "#f9ff93", "#b3fdff"];
 
-const numBalls = 150;
+const numBalls = 300;
 const balls = [];
 
 
@@ -19,7 +19,7 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.height = ball.style.width;
   
   balls.push(ball);
-  document.getElementById('playing').append(ball);
+  document.getElementById('bodymain').append(ball);
 }
 
 

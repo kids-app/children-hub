@@ -23,13 +23,14 @@ class Home extends React.Component {
     render() {
         return (
             <>
-           
+             <Footer />
           
                 {this.renderlogin()}
                 <main class='main'>
+              
                     <section class="stage">
                         <Link onClick={this.setRedirect}>
-                            <figure class="ball bubble"><img class='img1' src={require('../pics/story3.png')}/></figure>
+                            <figure class="ballmain bubble"><img class='img1' src={require('../pics/story3.png')}/></figure>
                         </Link>
                         
                         
@@ -51,8 +52,9 @@ class Home extends React.Component {
                         </Link>
                     </section>
                     <button class="signin" type="button" onClick={this.setRedirect}>Sign In</button>
+                    
                 </main>
-                <script src="app.js"></script>
+               
                 
             </>
         )
