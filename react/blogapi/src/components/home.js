@@ -26,7 +26,7 @@ class Home extends React.Component {
            
           
                 {this.renderlogin()}
-                <main>
+                <main class='main'>
                     <section class="stage">
                         <Link onClick={this.setRedirect}>
                             <figure class="ball bubble"><img class='img1' src={require('../pics/story3.png')}/></figure>

@@ -31,7 +31,7 @@ function Footer() {
 </Link>
 </section> */}
 
-		<div class="sidenav">
+		{/* <div class="sidenav">
         
         <a class="myanq" href="/stories">Stories</a>
         
@@ -39,7 +39,7 @@ function Footer() {
         <a class="myanq" href="/games">Games</a>
         <a class="myanq" href="#">Music</a>
       </div>
-     
+      */}
     
 		</>
 		

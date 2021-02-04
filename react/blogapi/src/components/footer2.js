@@ -30,7 +30,7 @@ function Footer2() {
     <figure class="ball4 bubble"><img class='img4' src={require('../pics/whoknows.png')}/></figure>
 </Link>
 </section> */}
-
+{/* 
 		<div class="sidenavfooter2">
         
         <a class="myanqfooter" href="/stories">Stories</a>
@@ -38,7 +38,7 @@ function Footer2() {
         <a class="myanqfooter2" href="/songs">Songs</a>
         <a class="myanqfooter2" href="/games">Games</a>
         <a class="myanqfooter2" href="#">Music</a>
-      </div>
+      </div> */}
      
     
 		</>
