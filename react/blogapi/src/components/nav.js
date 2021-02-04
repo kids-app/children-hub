@@ -22,12 +22,7 @@ function Nav(){
   </div>
 
 </section>
-     {/* <div class="sidenav2">
-        <a href="#">About</a> */}
-        {/* <a href="#">Contact</a> */}
-        {/* <a href="#">Clients</a>
-        <a href="#">Contact</a> */}
-      {/* </div> */}
+ 
       </>
 		
 		
