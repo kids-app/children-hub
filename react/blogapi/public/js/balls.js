@@ -3,7 +3,7 @@ console.log('hiiiiiiiiiii');
 
 const colors = ["#ff8888","#ffdda8",  "#d9d1ff",   "#f9ff93", "#b3fdff"];
 
-const numBalls = 300;
+const numBalls = 250;
 const balls = [];
 
 
