@@ -8,19 +8,19 @@ import { Link } from 'react-router-dom';
 
 
 
-function Nav2(){
-	return (
-		<>
-     <div class="sidenavnav2">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        {/* <a href="#">Clients</a>
-        <a href="#">Contact</a> */}
-      </div>
-      </>
+// function Nav2(){
+// 	return (
+// 		<>
+//      <div class="sidenavnav2">
+//         <a href="#">About</a>
+//         <a href="#">Contact</a>
+//         {/* <a href="#">Clients</a>
+//         <a href="#">Contact</a> */}
+//       </div>
+//       </>
 		
 		
-	);
-}
+// 	);
+// }
 
-export default Nav2;
+// export default Nav2;
