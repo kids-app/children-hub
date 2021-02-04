@@ -2,7 +2,7 @@ import React, { useState,useEffect } from "react";
 import axios from 'axios';
 import PostLoadingComponent from './components/postLoading';
 import { BrowserRouter as Link } from 'react-router-dom';
-
+import Nav from '../src/components/nav';
 
 import "./css/youtube.css";
 
@@ -21,9 +21,14 @@ function Youtube(){
       });
   }, [setAppState]);
   return(
+    <>
+    <h1 className='songs'>Songs List</h1>
       <div>
              <PostLoading isLoading={appState.loading} songs={appState.songs} />
       </div>
+     
+       <Nav />
+       </>
   )
   
 }
@@ -37,8 +42,10 @@ function video(props){
         
         <>
 
-  <Link  to={`/songs/${item.snippet.resourceId.videoId}`} ><img alt='img' className='youtubeLink' src={item.snippet.thumbnails.default.url} /> </Link>
 
+      <div className='vee'>
+  <Link  to={`/songs/${item.snippet.resourceId.videoId}`} ><img alt='img' className='youtubeLink' src={item.snippet.thumbnails.default.url} /> </Link>
+  </div>
       </>
         )
     })}
