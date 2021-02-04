@@ -1,7 +1,7 @@
 
-body {
+/* body {
     font-family: "Lato", sans-serif;
-  }
+  } */
   
   .sidenav {
     height: 100%;
@@ -13,6 +13,7 @@ body {
     background-color:  #9dd8f7b4;
     overflow-x: hidden;
     padding-top: 20px;
+    font-family: 'Potta One', cursive;
   }
   
   .sidenav a {
@@ -27,6 +28,7 @@ body {
     width: 150px;
     height: 55px;
     box-shadow: 5px 5px #9DD8F7, 10px 10px #f98ebb, 15px 15px #FAF088;
+    font-family: 'Potta One', cursive;
     
     
   }

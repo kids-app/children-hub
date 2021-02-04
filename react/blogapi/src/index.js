@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import App from './App';
+import Youtube from './Youtubek';
+import Videoid from './Videoid';
 import Header from './components/header';
 import Footer from './components/footer';
 import Register from './components/register';
@@ -32,8 +33,15 @@ const routing = (
            
                 <Route exact path="/" component={Home} />
                 <Route exact path="/home" component={HomeAfter} />
-                <Route exact path="/songs" component={App} />
+
+                
                 <Route path="/aboutus" component={Aboutus} />
+
+                <Route exact path="/songs" component={Youtube} />
+                <Route  path="/songs/:id" component={Videoid} />
+
+               
+
 
                 <Route path="/gamexo" component={Game} />
                 <Route className="app-container" path="/piano" component={Piano} />
